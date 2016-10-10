@@ -1,0 +1,501 @@
+/**************头部样式***********************/
+.top{
+	width:1200px;
+	height: 30px;
+	margin: 0 auto;
+	position: relative;
+}
+/*******头部左边导航***********/
+.top span{
+	font-size: 12px;
+	float: left;
+	margin-left:15px;
+	margin-top: 5px;
+}
+.top span a{
+	color:lightslategray;
+	text-decoration: none;
+}
+.top b{
+	color: red;
+}
+/*********头部右边导航***********/
+.top ul{
+	float:left;
+	margin-left: 40%;
+}
+.top ul li{
+	width: 64px;
+	height: 30px;
+	float: left;
+	position: relative;
+}
+.top ul li a{
+	display:block;
+	width:64px;
+	height: 30px;
+	text-decoration: none;
+	font-size: 12px;
+	color:black ;
+	margin-top: 5px;
+	text-align: center;
+	float: left;
+}
+.top ul li a:hover{
+	color: deepskyblue;
+}
+/***************登录***********/
+.top ul li:nth-child(1),.top ul li:nth-child(7){
+	width: 40px;
+}
+.top ul li:nth-child(1) a,.top ul li:nth-child(7) a{
+	width: 40px; 
+}
+.top ul li:nth-child(2){
+	width: 80px;
+	text-align: center;
+}
+/**********购物车样式**************/
+.top ul li:nth-child(3) span{
+	display: inline-block;
+	position: absolute;
+	left:-25px;
+	top:3px;
+	width: 15px;
+	height: 15px; 
+	background: url(../img/top/bg.png) no-repeat -288px -47px;
+}
+.top ul li:nth-child(3) b{
+	color: red;
+}
+/***********我的E宠样式***************/
+.top ul li:nth-child(4) span{ 
+	display: inline-block;
+	position: absolute;
+	left:-13px;
+	top:3px;
+	width: 15px;
+	height: 15px; 
+	background: url(../img/top/bg.png) no-repeat -315px -47px;
+}
+/***************手机版***************/
+.top ul li:nth-child(6) span{ 
+	display: inline-block;
+	position: absolute;
+	left:-15px;
+	top:3px;
+	width: 15px;
+	height: 15px;  
+	background: url(../img/top/bg.png) no-repeat -334px -46px;
+}
+/*************投诉建议**************/
+.top ul li:nth-child(8) a{
+	color: red;
+} 
+/************划过出现下拉表***************/
+.top .drop-down{
+	position: absolute;
+	width:80px; 
+    top: 28px;
+    left: 900px;
+    background:white;
+    display: none;
+}
+.top .drop-down li{
+	list-style: none;
+    font-size:12px;
+    text-align:center;
+	width: 80px;
+	height: 20px;
+	line-height: 20px;
+}
+/***********下拉框*********************/
+.top .drop-down-div{
+	position: absolute;
+	top: 29px;
+	left: 850px;
+	width:180px;
+    height:80px;
+    background:white;
+    display: none;
+}
+.top .drop-down-div button{
+	width: 70px;
+	height: 30px;
+	border: 1px solid darkcyan;
+	border-radius:5px ;
+	text-align: center;
+	line-height: 30px;
+	margin-top: 20px;
+	margin-left: 12px;
+}
+.top-next-img{
+	width: 95%;
+	margin-left: 5%;
+}
+.top-next-img img{
+	width: 95%;
+}
+/*************搜索区域*******************/
+.search{
+	width:1200px;
+	height:80px;
+	margin: 0 auto;
+	margin-top:20px;
+}
+.search .img1{
+	float: left;
+}
+/**********搜索框**************/
+.search input{
+	float: left;
+	width: 400px;
+	height: 30px;
+	border: 4px solid green;
+	color: lightslategray;
+	font-size: 18px;
+	text-indent:16px;
+	margin-left: 100px;
+	margin-top: 10px;
+}
+/***************搜索按钮*****************/
+.search button{
+	width:70px;
+	height:38px;
+	color:white;
+	background: green;
+	text-align: center;
+	line-height: 30px;
+	float: left;
+	margin-top: 10px;
+	border: none;
+}
+.search .tel-picture{
+	display: inline-block;
+	float: left;
+	width: 15px;
+	height: 15px;
+	margin-top: 23px;
+	margin-left:80px ;
+	background:url(../img/top/ico.png) no-repeat -26px -152px ;
+}
+.search .tel{
+	display: inline-block;
+	float: left;
+	color: black;
+	font-size: 20px;
+	margin-top: 15px;
+}
+.search .goods-picture{
+	display: inline-block;
+	float: left;
+	width: 40px;
+	height: 40px;
+	background: url(../img/gif/shopping-cart.gif) no-repeat;
+	margin-left: 120px;
+}
+.search .goods{
+	display:inline-block ;
+	width: 80px;
+	height: 40px;
+	float: left;
+	margin-top: 15px;
+	
+}
+.search .goods a{
+	text-decoration: none;
+}
+.search .goods b{
+	color:red;
+}
+/**********搜索菜单下面的列表热度******************/
+.search ul{
+	width:450px;
+	margin-left: 240px;
+}
+
+.search ul li{
+	float: left;
+	color: darkgray;
+	font-size: 12px;
+	border-right:1px solid darkgray ;
+}
+.search ul li a{
+	display: inline-block;
+	float: left;
+	font-size: 12px;
+	color: darkgrey;
+	text-align: center;
+	text-decoration: none;
+	margin-left: 5px;
+	margin-right: 5px;
+}
+.search ul li:nth-child(2) a{
+	color: red;
+}
+/**********导航栏**************/
+ 
+.daohang {
+	width: 1200px;
+	height: 40px;
+	float: left;
+	margin-left: -178px;
+	position: relative;
+}
+
+.daohang ul {
+	width: 1150px;
+	height: 40px;
+	float: left;
+	position: relative;
+	margin-left: 10px;
+}
+
+.daohang ul li {
+	float: left;
+}
+
+.daohang ul li:last-child {
+	position: absolute;
+	right: 0px;
+}
+
+.daohang ul li a {
+	display: inline;
+	width: 110px;
+	height: 40px;
+	text-align: center;
+	line-height: 40px;
+	font-size: 20px;
+	float: left;
+	text-decoration: none;
+	color: black;
+	font-weight: 700;
+}
+
+.daohang ul li a:hover {
+	color: green;
+}
+.daohang ul li:nth-child(1) a:hover,.daohang ul li:nth-child(2) a:hover{
+	background: darkgreen;
+	color: white; 
+}
+/************狗狗分类的下拉框************************/
+.daohang .daohang-drop-down{
+	width: 300px; 
+	height:360px;
+	position: absolute;
+	top:40px;
+	left:10px;
+	display: none;
+	
+}
+.daohang .daohang-drop-down ol{
+	list-style: none;
+	width: 200px;
+	height: 360px;
+	background: white;
+}
+.daohang .daohang-drop-down ol li {
+	height: 40px;
+	line-height:40px;
+}
+.daohang .daohang-drop-down ol li:nth-child(8) {
+	height: 50px;
+	line-height:50px;
+}
+
+.daohang .daohang-drop-down ol li a{
+	display: inline-block;
+	width: 50px;
+	font-size: 14px;
+	color: black;
+	text-decoration: none;
+	margin-left: 5px;
+}
+.daohang .daohang-drop-down ol li:nth-child(8) a{
+ 	width: 100px;
+ 	font-size: 16px;
+	color:greenyellow;
+}
+.daohang .daohang-drop-down ol li:nth-child(8) div {
+	text-align: center;
+	line-height: 20px;
+	width: 40px;
+	height:20px;
+	line-height: 22px;
+	font-size: 14px;
+	border-radius:10px;
+	background: darkorange;
+	float: right;
+	color: white;
+	margin-top: 15px;
+	margin-right: 15px;
+}
+.daohang .daohang-drop-down ol li a:hover{
+	color: darkturquoise;
+}
+
+
+.daohang .daohang-drop-down ol li span{
+	display: inline-block;
+	color: dimgrey;
+	width: 40px;
+	font-size: 12px;
+	margin-left: -20px;
+}
+.daohang .daohang-drop-down ol li .s1{
+	display: inline-block;
+	width: 20px;
+	height:20px;
+	float: left;
+	margin-top: 15px;
+	margin-left: 10px;
+}
+
+/*************下拉表的小图标****************/
+.daohang .daohang-drop-down ol li:nth-child(1) .s1{
+	background: url(../img/gif/menuIco1.png) no-repeat 0px 0px ;
+}
+.daohang .daohang-drop-down ol li:nth-child(2) .s1{
+	background: url(../img/gif/menuIco1.png) no-repeat 0px -35px ;
+}
+.daohang .daohang-drop-down ol li:nth-child(3) .s1{
+	background: url(../img/gif/menuIco1.png) no-repeat 0px 0px ;
+}
+.daohang .daohang-drop-down ol li:nth-child(4) .s1{
+	background: url(../img/gif/menuIco1.png) no-repeat 0px -70px ;
+}
+.daohang .daohang-drop-down ol li:nth-child(5) .s1{
+	background: url(../img/gif/menuIco1.png) no-repeat 0px -105px ;
+}
+.daohang .daohang-drop-down ol li:nth-child(6) .s1{
+	background: url(../img/gif/menuIco1.png) no-repeat 0px -140px ;
+}
+.daohang .daohang-drop-down ol li:nth-child(7) .s1{
+	background: url(../img/gif/menuIco1.png) no-repeat 0px -175px ;
+}
+.daohang .daohang-drop-down ol li:nth-child(8) .s1{
+	background:url(../img/gif/active.png) no-repeat;
+}
+/****************拓展导航框*************************/
+.daohang-drop-down .dao{
+	position: absolute;
+	width: 400px;
+	height: 500px;
+	top: 0px;
+	left: 65%;
+	z-index:2;
+	background: white;
+	border: 1px solid green;
+	display: none;
+}
+
+	
+
+.daohang-drop-down .dao table tr{
+	display: inline-block;
+	height: 40px;
+	width: 400px; 
+	border-bottom: 1px dotted darkgray;
+}
+.daohang-drop-down .dao table tr td{
+	display: inline-block;
+	margin-top: 5px;
+	height:30px;
+	line-height: 30px;
+	
+}
+.daohang-drop-down .dao table tr td{
+	width: 150px;
+	font-size: 18px;
+	text-indent: 54px;
+}
+.daohang-drop-down .dao table tr td:nth-child(2){
+	background: url(../img/gif/dao1.gif) no-repeat;
+	width: 200px;
+}
+/************狗狗导航对应的下拉框*****************/
+.daohang .daohang-drop-down2{
+	width: 300px; 
+	height:360px;
+	position: absolute;
+	top:40px;
+	left:10px;
+	display: none;
+}
+.daohang .daohang-drop-down2 ol{
+	list-style: none;
+	width: 300px;
+	float: left;
+}
+.daohang .daohang-drop-down2 ol li{
+	width:300px;
+	height: 43px;
+	text-indent:90px;
+	line-height: 42px;
+    border: 1px  solid lavender;
+}
+/****************bar导航*******************/
+
+.bar { 
+	width: 40px;
+	height: 580px;
+	background: olivedrab;
+	position: fixed;
+	right: 0px;
+	top: 30px;
+	border-radius: 40px 0 0 40px;
+}
+
+
+/************bar下的基本样式******************/
+
+.bar span {
+	display: inline-block;
+	width: 30px;
+	height: 26px;
+	margin-top: 22px;
+	margin-left: 3px;
+	position:relative;
+}
+
+.bar span:nth-child(2) {
+	margin-top: 50px;
+}
+
+.bar span:nth-child(1) {
+	background: url(../img/top/bar.png) no-repeat 0px -239px;
+}
+
+.bar span:nth-child(2) {
+	background: url(../img/top/bar.png) no-repeat 0px -277px;
+}
+
+.bar span:nth-child(3) {
+	background: url(../img/top/bar.png) no-repeat 0px -315px;
+}
+
+.bar span:nth-child(4) {
+	background: url(../img/top/bar.png) no-repeat 0px -350px;
+}
+
+.bar span:nth-child(5) {
+	background: url(../img/top/bar.png) no-repeat 0px -385px;
+}
+
+.bar span:nth-child(6) {
+	background: url(../img/top/bar.png) no-repeat 0px -628px;
+}
+
+.bar span:nth-child(7) {
+	background: url(../img/top/bar.png) no-repeat 0px -420px;
+}
+
+.bar span:nth-child(8) {
+	background: url(../img/top/bar.png) no-repeat 0px -486px;
+}
+
+.bar span:nth-child(9) {
+	background: url(../img/top/bar.png) no-repeat 0px -454px;
+}

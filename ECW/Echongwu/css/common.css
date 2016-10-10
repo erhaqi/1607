@@ -1,0 +1,17 @@
+@charset "utf-8";
+*{
+	margin: 0;
+	padding: 0;
+}
+img{
+	border: none;
+}
+ul li{
+	list-style: none;
+}
+body{
+	font-family: "微软雅黑";
+}
+ input{
+	border: none;
+}

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html> 
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" href="../css/common.css" />
+		<link rel="stylesheet" href="../css/logon.css" />
+		<script type="text/javascript" src="../js/jquery-1.12.0.js" ></script>
+		<script type="text/javascript" src="../js/common.js" ></script>
+		<script type="text/javascript" src="../js/logon.js" ></script>
+		<script type="text/javascript" src="../js/cookice.js" ></script>
+		
+	</head> 
+	<body> 
+		 
+		<!--头部内容-->
+		<div class="top"> 
+		<!--	头部图片-->
+			<a href="http://www.epet.com"><img src="../img/gif/epet-logo.png"/></a>
+		<!--	头部列表-->
+			<ul class="datalist">
+				<li><a href="#">E宠物城</a></li> 
+				<li><a href="http://www.epet.com/activity.html">活动</a></li>
+				<li><a href="http://www.epet.com/brands.html">品牌</a></li>
+			</ul>
+		</div>
+	  <!--  中间区域-->
+		<div class="background"> 
+			<!--登录菜单-->
+			<div class="logon-menu">
+				<span class="logon-general">普通登录</span>
+				<span class="logon-phone">手机动态密码登录</span>
+	      <!--   普通登录方式	-->	
+				<div class="general-menu">
+					    <input type="text" class="username" placeholder="手机号/邮箱/用户名"/>
+					    <input type="password" class="psw" placeholder="密码" />
+					    <input type="checkbox" class="auto-btn" />
+					    <span class="auto-text">自动登录</span> 
+					    <a href="https://passport.gutou.com/retrieve_password.html?referer=%20http%3A%2F%2Fwww.epet.com"  class="forget-psd">忘记密码？</a>
+					    <button class="logon-btn">登录</button> 
+					    <span class="teamwork">合作登录网站</span>
+					    <a href="http://localhost:3000/Echongwu/html/login.html" class="login">注册帐号</a> 
+					    <ul>
+					    	<a href="https://graph.qq.com/oauth/show?which=Login&display=pc&response_type=code&client_id=204246&redirect_uri=https%3A%2F%2Fpassport.gutou.com%2Foauth%2Fcallback%2Fqq.html&scope=get_user_info%2Cadd_t%2Cadd_pic_t%2Cadd_share"><li></li></a>
+					    	<a href="https://api.weibo.com/oauth2/authorize?client_id=1250580888&redirect_uri=http%3A%2F%2Fpassport.gutou.com%2Foauth%2Fcallback%2Fweibophone.html&response_type=code&state=weibo_57ec782f9855a2.94319614"><li></li></a>
+					    	<a href="https://open.weixin.qq.com/connect/qrconnect?appid=wxb279ca57a81d9f6a&redirect_uri=http://passport.gutou.com/oauth/weixin.html?do=callback&response_type=code&scope=snsapi_login&state=weixin_57ec7841c4f3a2.56691013#wechat_redirect"><li></li></a>
+					    	<a href="https://passport.gutou.com/synlogin/alipay.html?returnurl=http%3A%2F%2Fwww.epet.com"><li></li></a>
+					    	
+					    </ul>
+			    </div> 
+			  <!--  手机登录方式-->
+			     <div class="phone-menu">
+					    <input type="text" class="phone" placeholder="已注册的手机号"/>
+					    <input type="text" class="y-psw" placeholder="验证码" />
+					    <span class="y-psw-content"></span>
+					    <input type="text" class="d-psw" placeholder="动态密码" />
+					     <a class="d-psw-content">获取动态密码</a>  
+					     <input type="checkbox" class="auto-btn" />  
+					    <span class="auto-text">自动登录</span> 
+					    <a href="https://passport.gutou.com/retrieve_password.html?referer=%20http%3A%2F%2Fwww.epet.com"  class="forget-psd">忘记密码？</a>
+					    <button class="logon-btn">登录</button> 
+					    <span class="teamwork">合作登录网站</span> 
+					    <a href="login.html"  class="login" >注册帐号</a> 
+					    <ul>
+					    	<a href="https://graph.qq.com/oauth/show?which=Login&display=pc&response_type=code&client_id=204246&redirect_uri=https%3A%2F%2Fpassport.gutou.com%2Foauth%2Fcallback%2Fqq.html&scope=get_user_info%2Cadd_t%2Cadd_pic_t%2Cadd_share"><li></li></a>
+					    	<a href="https://api.weibo.com/oauth2/authorize?client_id=1250580888&redirect_uri=http%3A%2F%2Fpassport.gutou.com%2Foauth%2Fcallback%2Fweibophone.html&response_type=code&state=weibo_57ec782f9855a2.94319614"><li></li></a>
+					    	<a href="https://open.weixin.qq.com/connect/qrconnect?appid=wxb279ca57a81d9f6a&redirect_uri=http://passport.gutou.com/oauth/weixin.html?do=callback&response_type=code&scope=snsapi_login&state=weixin_57ec7841c4f3a2.56691013#wechat_redirect"><li></li></a>
+					    	<a href="https://passport.gutou.com/synlogin/alipay.html?returnurl=http%3A%2F%2Fwww.epet.com"><li></li></a>
+					    	
+					    </ul>
+			     </div>
+			</div>
+			
+		</div>
+		<div class="foot"></div>
+	</body>
+</html>

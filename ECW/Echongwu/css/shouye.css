@@ -1,0 +1,368 @@
+
+/*************轮播图**************/
+
+.lunbo {
+	width: 770px;
+	height: 360px;
+	float: left;
+	margin-left: 250px;
+	position: relative;
+}
+
+
+/***********轮播图点击按钮*************/
+
+.span_div {
+	width: 400px;
+	height: 100px;
+	position: absolute;
+	margin-top: 320px;
+	left: 260px;
+}
+
+.lunbo .btn {
+	float: left;
+	width: 20px;
+	height: 20px;
+	border-radius: 50%;
+	background: red;
+	text-align: center;
+	line-height: 20px;
+	margin-left: 10px;
+}
+
+
+/**********轮播图下一张按钮***************/
+
+.lunbo .next {
+	width: 60px;
+	height: 60px;
+	position: absolute;
+	background: url(../img/gif/btn.gif) no-repeat 0px -60px;
+	top: 150px;
+	right: 0px;
+	opacity: 0.8;
+}
+
+
+/**********轮播图上一张**************/
+
+.lunbo .prev {
+	width: 60px;
+	height: 60px;
+	position: absolute;
+	background: url(../img/gif/btn.gif) 0px 0px;
+	top: 150px;
+	opacity: 0.8;
+}
+
+
+
+
+
+/**********轮播图右边的区域****************/
+
+.lunbo-right {
+	height: 360px;
+	width: 220px;
+	float: left;
+}
+
+.lunbo-right li {
+	height: 120px;
+	width: 220px;
+	border-bottom: 1px solid lavender;
+}
+
+.lunbo-right li:nth-child(3) {
+	border: none;
+}
+
+.lunbo-right img {
+	width: 220px;
+	height: 118px;
+}
+
+
+
+
+/******************轮图的下方****************/
+
+.lunbo-bottom {
+	width: 1200px;
+	height: 240px;
+	float: left;
+	margin-left: 5%;
+	margin-top: 20px;
+	position: relative;
+}
+
+
+/***********左边区域***************/
+
+.lunbo-bottom .lunbo-bottom-list {
+	float: left;
+	width: 230px;
+	height: 200px;
+}
+
+.lunbo-bottom .lunbo-bottom-list li {
+	width: 230px;
+	height: 100px;
+	color: white;
+	background: darksalmon;
+	border-bottom: 1px dashed white;
+}
+
+.lunbo-bottom .lunbo-bottom-list li:last-child {
+	border: none;
+}
+
+.lunbo-bottom .lunbo-bottom-list li span {
+	display: inline-block;
+	width: 230px;
+	margin-top: 10px;
+	margin-left: 5px;
+	font-size: 12px;
+}
+
+.lunbo-bottom .lunbo-bottom-list li div {
+	width: 40px;
+	height: 40px;
+	margin-left: 50px;
+	margin-top: 10px;
+	float: left;
+}
+
+.lunbo-bottom .lunbo-bottom-list li:nth-child(1) .ads {
+	background: url(../img/gif/ads.png) no-repeat 5px 0px;
+}
+
+.lunbo-bottom .lunbo-bottom-list li:nth-child(2) .ads {
+	background: url(../img/gif/ads.png) no-repeat -36px -40px;
+}
+
+.lunbo-bottom .lunbo-bottom-list li b {
+	display: inline-block;
+	font-size: 22px;
+	float: left;
+	margin-top: 15px;
+	margin-left: 20px;
+}
+
+
+/***********右边区域***************/
+
+.lunbo-bottom .lunbo-bottom-right {
+	float: left;
+	width: 970px;
+	height: 200px;
+	background: lavender;
+}
+
+.lunbo-bottom .lunbo-bottom-right div {
+	width: 60px;
+	height: 60px;
+	border-radius: 50%;
+	float: left;
+	margin: 30px;
+	background: url(../img/jpg/55362ca4e29a30c4efc5dfe30459c56a.jpg);
+}
+
+.lunbo-bottom .lunbo-bottom-right span {
+	float: left;
+	display: inline-block;
+	width: 340px;
+	height: 170px;
+	margin-top: 15px;
+	background: white;
+	font-size: 12px;
+	position: relative;
+}
+
+.lunbo-bottom .lunbo-bottom-right div:nth-child(1) {
+	background: url(../img/jpg/2b054b396504700dd1d41622beea4f8f.jpg);
+}
+
+.lunbo-bottom .lunbo-bottom-right span dl,
+.lunbo-bottom .lunbo-bottom-right span dt {
+	margin: 10px;
+	line-height: 20px;
+}
+
+.lunbo-bottom .lunbo-bottom-right span dd {
+	position: absolute;
+	bottom: 10px;
+	left: 20px;
+	color: darkgray;
+	border-bottom: 1px lavender solid;
+}
+
+.lunbo-bottom .lunbo-bottom-right span dl b {
+	margin: 0px 3px;
+	color: red;
+	font-size: 16px;
+}
+
+
+/******************开始购物区域**********************/
+
+.start-top {
+	float: left;
+	width: 100%;
+	height: 50px;
+	background: rgb(245, 245, 245);
+}
+
+.start-top img {
+	margin-top: 13px;
+	margin-left: 5%;
+}
+
+
+/****************开始购物-精品*********************************/
+
+.start-jingpin {
+	float: left;
+	width: 100%;
+	background: rgb(245, 245, 245);
+	
+}
+
+.start-jingpin h4 {
+	text-indent: 5%;
+	margin-bottom: 20px;
+}
+
+.start-jingpin div {
+	float: left;
+	margin-left: 5%;
+	
+	height: 300px;
+	width: 550px;
+	background: white;
+	margin-bottom:30px; 
+}
+
+.start-jingpin div .jingpin-picture {
+	display: inline-block;
+	width: 200px;
+	height: 200px;
+	float: left;
+	overflow: hidden;
+	margin-top: 50px;
+}
+
+.start-jingpin div dl {
+	float: left;
+	display: block;
+	width: 300px;
+	height: 30px;
+	margin-top: 49px;
+	margin-left: 20px;
+	font-size: 14px;
+	border-bottom: 1px solid lavender;
+	color: darkslategrey;
+}
+
+.start-jingpin div dt {
+	display: block;
+	color: darkgray;
+	width: 300px;
+	height: 100px;
+	font-size: 12px;
+	margin-left: 220px;
+	margin-top: 89px;
+	line-height: 20px;
+	text-indent: 24px;
+}
+
+.start-jingpin div dd {
+	display: block;
+	margin-left: 220px;
+	color: red;
+}
+/***************狗狗食物*****************/
+.dog-food {
+	float: left;
+	width: 100%;
+	background: rgb(245, 245, 245);
+	
+}
+.dog-food ul{
+	width:1200px;
+	height: 50px;
+	float: left;
+	margin-left: 5%;
+	background:white;
+}
+.dog-food ul img{
+	float: left;
+}
+.dog-food ul li{
+	
+}
+.dog-food ul li a{
+	margin-top: 5px;
+	display: inline-block;
+	float: left;
+	width: 150px;
+	height: 40px;
+	text-align: center;
+	line-height:40px;
+	text-decoration: none;
+	color: dimgray;
+	border-right: 1px dotted lavender;
+}
+.dog-food ul li a:hover{
+	color: dodgerblue;
+}
+.dog-food ul li:nth-child(1) a{
+	width: 590px;
+	text-align: left;
+	text-indent:20px;
+	font-size: 20px;
+	color: green;
+	border: none;
+}
+.dog-food ul li:last-child a{
+	border: none;
+} 
+.dog-food  div{
+	float: left;
+	width: 1200px;
+	height: 480px;
+	margin-left:5%;
+   background: white;
+   margin-bottom: 30px;
+   }
+.dog-food div img{
+	float: left;
+}
+.dog-food div span{
+	
+	display: inline-block;
+	float: left;
+	margin-left: 30px;
+	width: 200px;
+	height:240px;
+	
+}
+.dog-food div span dl{
+	margin-left: 25px;
+	display: block;
+	width: 150px;
+	height: 150px;
+}
+.dog-food div span dt{
+	font-size: 12px;
+	color: darkslategray;
+	text-align: center;
+}
+.dog-food div span dd{
+	display: block;
+	font-size: 16px;
+	color: red;
+	text-align: center; 
+	margin-top:20px;
+}

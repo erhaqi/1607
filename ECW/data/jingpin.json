@@ -1,0 +1,47 @@
+[
+  {
+    "id":"jingpin1",
+    "price":"￥233.00", 
+    "imgurl":"img/jpg/jingpin1.jpg",
+    "title":"Petiy 360度旋转双层有圆头针梳",
+    "reason":"360度旋转针梳，给爱宠梳理毛发时更加轻松；弯曲钢针设计，减少爱宠排斥感；双层圆头设计轻松去死皮……"
+  },
+  { 
+    "id":"jingpin2",
+    "price":"￥123.00",
+    "imgurl":"img/jpg/jingpin2.jpg",
+     "title":"毫棒HOWBONE 小肉骨系列 30支装",
+      "reason":"宠物营养骨专家，高效满足犬只各生理阶段需求，显著改善犬皮肤和毛色光泽，有助于消除爱犬由皮毛干燥或皮屑引发的瘙痒。"
+  },
+   {
+   "id":"jingpin3",
+    "price":"￥11.00",
+    "imgurl":"img/jpg/jingpin3.jpg",
+     "title":"维斯康VitsCan 幼犬专用羊奶粉",
+      "reason":"羊奶较牛奶的蛋白质在胃中形成的凝块细，更易消化吸收。羊奶可解决大部分牛奶蛋白不耐症引起的过敏症状。维斯康幼犬专用羊奶粉启动幼犬成长引擎。"
+  },
+  {
+  "id":"jingpin4",
+    "price":"￥33.00",
+    "imgurl":"img/jpg/jingpin4.jpg",
+     "title":"韩国BOTH 升级配方山羊奶粉 450g",
+      "reason":"韩国BOTH 升级配方山羊奶粉 膳食成份+羊奶粉+益生元 全面营养 促进生长 针对肠胃发育不好 挑食 偏食专用"
+  },
+   {
+   "id":"jingpin5",
+    "price":"￥67",
+    "imgurl":"img/jpg/jingpin5.jpg",
+     "title":"菩施康 葡萄糖胺关节康 150片",
+      "reason":"菩施康 葡萄糖胺关节康 欧美配方 促进关节软骨再生 维护骨关节 修复软骨 消炎止痛 易吸收 增强关节免疫力 强健骨骼 预防骨质疏松"
+  },
+  {
+  "id":"jingpin6",
+    "price":"￥55.00", 
+    "imgurl":"img/jpg/jingpin6.jpg",
+     "title":"皇品LeadosPets 犬用发育生长剂",
+      "reason":"原装美国 宠物营养保健剂 全面补充营养 促进发育 强健体质"
+  }
+   
+]
+
+

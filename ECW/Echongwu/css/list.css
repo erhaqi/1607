@@ -1,0 +1,10 @@
+.lazy{
+	width: 100%;
+	float: left;
+}
+.lazy img{
+	margin-left: 2%;
+}
+.lazy img:hover{
+	border: 1px ridge darkcyan;
+}

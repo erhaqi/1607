@@ -1,0 +1,269 @@
+/*************头部样式********************/
+.top{
+	width: 1200px;
+	margin: 0 auto;
+	height: 120px;
+}
+/***********头部左边图片样式***********************/
+.top img{
+	margin:30px;
+	float: left;
+}
+/*************头部右边导航栏************************/
+.top .datalist {
+	float:right;
+	margin-top: 40px;
+}
+.datalist li{
+	float: left;
+}
+.datalist li a{
+	display:block;
+	width: 80px;
+	height: 16px;
+	text-align: center;
+	line-height: 16px;
+	margin-right: 10px;
+	color:dimgray;
+	text-decoration: none;
+}
+.datalist li:nth-child(2){
+	width: 70px;
+	border-left: 1px solid black; 
+	border-right: 1px solid black; 
+}
+.datalist li a:hover{
+	color: blue;
+}
+.top a{
+	display: inline-block;
+}
+/*********************中间**************************/
+.background{
+	width: 100%;
+	height: 600px;
+	background:url(../img/logon/logbg1.jpg)  no-repeat -300px 0px;
+	margin: 0 auto;
+	position: relative;
+}
+/********************登录菜单************************/
+.logon-menu{
+	float: right;
+	width: 410px;
+	height: 410px;
+	margin-top:70px;
+	margin-right:70px;
+	background: white;
+	position: relative;
+}
+/*********普通登录**************/
+.logon-general{
+	display: inline-block;
+	width: 180px;
+	height: 60px;
+	margin-top:15px ;
+	margin-left:22px;
+    border-bottom: 1px lavender solid;
+	text-align: center;
+	line-height: 60px;
+	float: left;
+	color: lightgray;
+	font-weight: 600;
+	
+}
+/************普通登录的表单***************/
+.general-menu{
+	width:360px ;
+	margin: 0 auto;
+	height: 500px;
+}
+.general-menu input{
+	margin-top:15px ;
+	width:360px;
+	height:40px;
+	text-indent: 50px;
+	font-size: 20px;
+	border:1px solid lavender; 
+}
+/**************用户名文本框********************/
+.general-menu .username{
+	background:url(../img/logon/ico.png)  10px 12px no-repeat;
+}
+/*****************密码框****************/
+.general-menu .psw{
+	background:url(../img/logon/ico.png)  10px -18px no-repeat;
+}
+/**************复选框***********************/
+.general-menu .auto-btn,.phone-menu .auto-btn{
+	width: 15px;
+	height:15px;
+	margin-top: 15px;
+	float: left;
+}
+/******************复选框旁边的文字*************************/
+.general-menu .auto-text,.phone-menu .auto-text{
+	display:inline-block;
+	float: left;
+	width: 60px;
+	height: 20px;
+	font-size: 15px;
+	margin-top:12px ;
+	margin-left:5px;
+	color:lightslategray;
+}
+/***************忘记密码字段******************/
+.general-menu .forget-psd,.phone-menu .forget-psd{
+	display: inline-block;
+	float: right;
+	margin-top: 12px;
+	text-decoration: none;
+	color: lightslategrey;
+	font-size:15px ;	
+}
+.general-menu .forget-psd:hover{
+	color: lightskyblue;
+}
+/*************登录按钮******************/
+.general-menu .logon-btn,.phone-menu .logon-btn{
+	margin-top: 15px;
+	width: 360px;
+	height: 50px;
+	border-radius: 5px;
+	line-height: 50px;
+	background: darkcyan;
+	font-size: 20px;
+   letter-spacing:20px;
+   text-indent: 20px;
+   color: white;
+}
+/****************合作登录网站***********************/
+.general-menu .teamwork,.phone-menu .teamwork{
+	display: inline-block;
+	font-size: 14px;
+	color:lightslategrey;
+	margin-top: 12px;
+	float: left;
+}
+/*************注册帐号字段**********************/
+.general-menu .login,.phone-menu .login{
+	display: inline;
+	float: right; 
+	margin-top: 12px;
+	color: lightslategray;
+	font-size: 14px;
+	color:lightslategrey;
+	text-decoration: none;
+}
+.general-menu .login:hover{
+	color: darkturquoise;
+}
+/***************各种登录方式**********************/
+.general-menu ul,.phone-menu ul{
+	width: 360px;
+	height: 30px;
+	float: left;
+}
+.general-menu ul a,.phone-menu ul a{
+	display: inline-block;
+	width:20px;
+	height:20px;
+	float: left;
+	margin-right: 20px;
+	margin-top: 15px;
+}
+.general-menu ul a:nth-child(1),.phone-menu ul a:nth-child(1){
+    background:url(../img/logon/ico.png)  0px -86px no-repeat;
+}
+.general-menu ul a:nth-child(2),.phone-menu ul a:nth-child(2){
+    background:url(../img/logon/ico.png)  0px -118px no-repeat;
+}
+.general-menu ul a:nth-child(3),.phone-menu ul a:nth-child(3){
+    background:url(../img/logon/ico.png)  0px -140px no-repeat;
+}
+.general-menu ul a:nth-child(4),.phone-menu ul a:nth-child(4){
+    background:url(../img/logon/ico.png)  0px -172px no-repeat;
+}
+
+/**********手机登录*****************/
+.logon-phone{
+	display: inline-block;
+	width: 180px;
+	height: 60px;
+	margin-top:15px ;
+	float: left;
+	border-bottom: 1px lavender solid;
+	text-align: center; 
+	line-height: 60px;
+	color: lightgray;
+	font-weight: 600;
+	
+}
+/***********手机登录的表单***********************/
+.phone-menu{
+	width:360px ;
+	margin: 0 auto;
+	height: 500px;
+	display: none;
+}
+.phone-menu input{
+	margin-top:15px ;
+	width:360px;
+	height:38px;
+	text-indent: 50px;
+	font-size: 20px;
+	border:1px solid lavender; 
+	float: left;
+}
+/*********手机号码输入框************************/
+.phone-menu .phone{
+	background: url(../img/logon/login_ico.png) no-repeat 10px -31px;
+}
+
+
+/**************验证码输入框*****************/
+.phone-menu .y-psw{
+	background: url(../img/logon/login_ico.png) no-repeat 10px -60px;
+	width: 240px;
+	
+}
+.phone-menu .y-psw-content{
+	display: inline;
+	height:38px ;
+	width: 100px;
+	background:red;
+	float:right;
+	margin-top: 15px;
+	text-align: center;
+	line-height: 38px;
+	background: greenyellow;
+	letter-spacing: 3px;
+	
+}
+/**************动态密码输入框****************************/
+.phone-menu .d-psw{
+	background: url(../img/logon/login_ico.png) no-repeat 10px 0px;
+	width: 240px;
+}
+.phone-menu .d-psw-content{
+	display: inline;
+	height:38px ;
+	width: 100px;
+	float:left;
+	margin-top: 15px;
+	margin-left: 16px;
+	border-radius:5px;
+	text-align: center;
+	line-height: 38px;
+	font-size: 12px;
+	color: lightslategrey;
+	border: 1px solid greenyellow;
+}
+
+
+
+
+
+.background  .active{
+	color: black;
+	border-bottom: 1px solid green;
+}

@@ -1,0 +1,33 @@
+.foot{
+	width: 1200px; 
+	margin-top: 20px;
+}
+.foot ul{
+	margin-left:35%;
+	height:16px ;
+}
+.foot ul li{
+	float: left;
+	height:16px ;
+
+	border-right:1px solid darkgray; 
+}
+.foot ul li a{
+	display: inline-block;
+	float: left;
+	height: 16px;
+	text-align: center;
+	line-height:16px ;
+	color:silver;
+	margin-left: 3px;
+	margin-right: 3px;
+	text-decoration: none;
+}
+.foot p{
+	margin-top: 15px;
+	margin-left: 15%;
+	white-space: pre-wrap;
+	color: lightgray;
+	font-size: 12px;
+}
+

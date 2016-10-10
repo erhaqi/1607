@@ -1,0 +1,122 @@
+<!DOCTYPE html> 
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title> 
+		<link rel="stylesheet" href="css/common.css"/>
+		<link rel="stylesheet" href="css/shouye.css"/>
+		<link rel="stylesheet" href="css/top.css" />
+		<link rel="stylesheet" href="css/footer.css" /> 
+	    <link rel="stylesheet" href="lun_bo_chaj_ian/jquery.xcarousel.css" />
+		<script type="text/javascript" src="js/jquery-1.12.0.js" ></script>
+	    <script type="text/javascript" src="js/common.js" ></script>
+	    <script type="text/javascript" src="js/shouye.js" ></script>
+	    <script type="text/javascript" src="js/logon.js" ></script> 
+	    <script type="text/javascript" src="lun_bo_chaj_ian/jquery.xcarousel.js" ></script>
+	   <script type="text/javascript" src="js/cookice.js"></script>
+	
+		<script> 
+		//轮播图
+		        jQuery(function($){
+		        	$.ajax({
+		  	  	    type:"get",
+		  	  	    url:"/data/picture.json", 
+		  	  	    dataType:"json",
+		  	  	    async:true,
+		  	  	    success:function(res){
+		  	  		var $ul=$("<ul/>");
+		  	  		$.each(res, function(idx,pic) {
+		  	  		       var $li=$("<li/>");
+		  	  		       $li.html($("<img/>").attr("src",pic.imgurl)).appendTo($ul);			
+		  	  		});
+		  	  		
+		  	  		$(".lunbo").append($ul);  
+		  
+		  	  		
+		  	  		 $('.lunbo').xcarousel({
+				        type:'fade'
+			    });
+		  	  	 } 
+		  	  	
+		  	  }); 
+		  	  
+		  	  
+		});
+		</script>
+	</head> 
+	<body>
+		<!--导入的头部-->
+	   <div class="shouye-top"></div>
+	   
+	 <!--  轮播图-->
+	   <div class="lunbo"></div>
+	<!--轮播图右边的内容-->
+	   <div class="lunbo-right">
+	   	 <ul class="lunbo-right-list">
+	   		<li><a href="#"><img src="img/jpg/957604b9d6c6ad8d1d7702899b4ebeda.jpg"/></a></li>
+	   		<li><a href="#"><img src="img/jpg/7e221e5a246d8824dc6a87b576e4130b.jpg"/></a></li>
+	   		<li><a href="#"><img src="img/jpg/edcc8d085b73fb0225704262f15b04ef.jpg"/></a></li>
+	   	</ul>
+	   </div>
+	 
+	    <!-- 轮播图下方-->
+	  <div class="lunbo-bottom">
+	  	<ul class="lunbo-bottom-list">
+	  		<li><span>上架新品</span>
+	  			<div class="ads"></div>
+	  			<b>293</b>
+	  		
+	  		</li>
+	  		<li><span>宠物用品单品数</span>
+	  			<div class="ads"></div>
+	  			<b>27699</b>
+	  		</li>
+	  	</ul>
+	  	<div class="lunbo-bottom-right">
+	  		<div></div>
+	  	     <span>
+	  	     	<dl>第<b>13次</b>购买
+	  	     		<dt>宝宝一直吃雪山的，泪痕没有了，好过敏的毛病也没有了，真的挺好的
+	  	     			<dd>美国天衡宝（原雪山）L.I.D系列 三文鱼甜薯全...</dd>
+	  	     		</dt>
+	  	     	</dl>
+	  	     </span>
+	  	     <div></div>
+	  	     <span>
+	  	     	<dl>第<b>69次</b>购买
+	  	     		<dt>这个很赞，主要是使用起来方便，不用冷藏，保质期也长，狗狗不排斥，伴着狗粮和肉吃完了，几天后发觉毛发好了。对心脏有没有辅助作用不知道哦，吃完之后，还会回购！
+	  	     			<dd>梵米派Famipet 3合1幸福滋味零食包 鸡肉鳕...</dd>
+	  	     		</dt>
+	  	     	</dl>
+	  	     </span>
+	  	</div>
+	  </div>
+	  <!--开始购物的头部-->
+	  <div class="start-top">
+	  	<img src="img/jpg/happy-shopping.jpg" />
+	  </div>
+	<!--  开始购物-->
+	<div class="start-jingpin"> 
+		<h4>E仔今天推荐了哪些精品？</h4> 
+	</div>
+	<!--狗狗主粮-->
+	<div class="dog-food">
+		<ul> 
+			<li><a href="#"><img src="img/jpg/x_food1.png" />狗狗主粮</a></li>
+			<li><a href="#">进口狗粮</a></li>
+	        <li><a href="#">国产狗粮</a></li>
+	        <li><a href="#">散装狗粮</a></li>
+	        <li><a href="#">处方狗粮</a></li>
+		</ul>
+		<div><img src="img/jpg/food0.jpg"/></div> 
+	</div>
+	  
+	   
+	  
+	   <!--导入的底部--> 
+	   <div class="shouye-foot"> 
+	   	
+	   </div>
+	</body>
+
+</html>

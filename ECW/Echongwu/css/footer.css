@@ -1,0 +1,187 @@
+@charset "utf-8";
+/****************底部表格*******************/
+.footer{
+	margin-top: 60px;
+	width:100%;
+	
+}
+.footer .tab{
+	width:100%;
+	background:green;
+}
+.footer .tab tr{
+	width:100%;
+	height:220px ;
+}
+.footer .tab tr td{
+	width: 200px;
+	height: 220px;
+	
+}
+/***************圆圈的大小*******************/
+.footer .tab tr td .round{ 
+    margin: 0 auto;
+	width:120px;
+	height:120px;
+	border-radius:50%;
+	background:white;
+	position: relative;
+
+}
+/**************圆圈里面的边框的大小*****************************/
+.footer .tab .round div{ 
+	width: 70px;
+	height: 60px;
+	position: absolute;
+	left: 25px;
+	top: 30px;
+}
+/************圆圈里面的图片*************************/
+.footer .tab .round .contain1{
+	background:url(../img/footer/q-ico.png) no-repeat 0px 0px;
+}
+.footer .tab .round .contain2{
+	background:url(../img/footer/q-ico.png) no-repeat 0px -70px;
+}
+.footer .tab .round .contain3{
+	background:url(../img/footer/q-ico.png) no-repeat 0px -140px;
+}
+.footer .tab .round .contain4{
+	background:url(../img/footer/q-ico.png) no-repeat 0px -205px;
+}
+.footer .tab .round .contain5{
+	background:url(../img/footer/q-ico.png) no-repeat 0px -270px;
+}
+.footer .tab .round .contain6{
+	background:url(../img/footer/q-ico.png) no-repeat 0px -350px;
+}
+/**************圆圈底下的文字说明********************/
+.footer tr td span{
+	display: inline-block;
+	width: 200px;
+	height: 20px;
+    text-align:center ;
+    color: white;
+    font-size: 20px;
+    margin-top:5px ;
+}
+/**************第二行表格******************/
+.footer .tab tr td img{
+	margin-left: 15px;
+	
+}
+/***********每个表格的UL*****************/
+.footer .tab tr td ul{
+	border-left: 1px dotted lightslategray;
+	margin-top:20px;
+	width: 198px;
+	height:150px;
+}
+.footer .tab tr td ul li{
+	width: 198px;
+	height: 22px;
+	text-align: center;
+	font-size: 22px;
+}
+.footer .tab tr td ul .li-first{
+	color: white;
+	margin-bottom: 15px;
+	}
+.footer .tab tr td ul li a{
+	
+	display: block;
+	color: white;
+	font-size: 14px;
+	width: 198px;
+	height: 14px;
+	margin-top:3px;
+	text-decoration: none;
+}
+.footer .tab tr td ul li a:hover{
+	
+	color: lightgray;
+}
+.footer .foot{
+	width:100%;
+	position: relative;
+	
+}
+/***************安全认证区域**********************/
+.foot .safe{
+	position: absolute;
+	width:380px;
+	height:130px;
+	top:40px;
+	left: 30px;
+}
+.foot .safe span{
+	display: block;
+	position: absolute;
+	color: lightslategrey;
+	font-size:12px ;
+	left: 175px;
+}
+.foot .safe img{
+	margin: 5px;
+	margin-top: 20px;
+}
+
+/*************二维码区域*****************************/
+.foot .two_dimensional_code{
+	position: absolute;
+	width: 350px;
+	height: 150px;
+	left:470px ;
+	top:0px
+}
+.foot .two_dimensional_code .span1{
+    display: block;
+	position: absolute;
+	color: lightslategrey;
+	font-size:12px ;
+	left:30px;
+	top: 20px;
+	}
+.foot .two_dimensional_code .span2{
+    display: block;
+	position: absolute;
+	color: lightslategrey;
+	font-size:12px ;
+	left:185px;
+		top: 20px;
+	}
+.foot .two_dimensional_code img{
+	margin-top: 50px;
+	margin-left: 50px;
+}
+/***************荣誉奖章区域*********************************/
+.foot .honor{
+	position: absolute;
+	width:380px;
+	height:130px;
+	top:40px; 
+	left:880px ;
+}
+.foot .honor span{
+	display: block;
+	position: absolute;
+	color: lightslategrey;
+	font-size:12px ;
+	right:170px;
+}
+.foot .honor img{
+	margin: 5px;
+	margin-top: 20px;
+}
+/**********************底部声明***********************/
+.foot .statement{
+	position:absolute;
+	display: inline-block;
+	text-align: center;
+	width: 860px;
+	white-space: pre-wrap; 
+	font-size: 12px;
+	color: lightslategray;
+	top:190px;
+	left: 170px; 
+}

@@ -1,0 +1,205 @@
+.accounts-goods{
+	width: 100%;
+	float:left;
+}
+.accounts-goods .list1{
+	width: 1200px;
+	float: left;
+	height: 25px;
+	margin-left: 5%;
+	border-bottom: 2px solid darkgray;
+}
+.accounts-goods .list1 li{
+	float: left;
+}
+.accounts-goods .list1 li a{
+	display: block;
+	float: left;
+	color: darkslategrey;
+	font-size: 18px;
+	text-decoration: none;
+	width: 120px;
+	height: 18px;
+	text-align: center;
+	border-right:1px darkgray solid ;
+}
+.accounts-goods .list1 li a span{
+	display: inline-block;
+	color: red;
+	text-indent: 3px;
+}
+/*************购物车外出框架****************/
+.accounts-goods .accounts{
+	width: 1200px;
+	float: left;
+	margin-left: 5%;
+}
+/*************空购物车的框架*********************/
+.accounts .kong{
+	float: left;
+	width: 1200px;
+	height: 270px;
+   	background: darkturquoise;
+	color: white;
+}
+.accounts-goods .accounts h3{ 
+	   height: 100px;
+	   font-size: 40px;
+	   text-align: center;
+	   line-height: 100px;
+
+}
+.accounts-goods .accounts .btn{
+	width: 200px;
+	height: 50px;
+	font-size:24px;
+	text-align: center;
+	color:white;
+	background: green;
+	border: none;
+	border-radius:5px ;
+	display: block;
+	margin: 0 auto;
+	margin-top: 5px;
+    
+}
+/**************购物车非空的样式**************************/
+.accounts .count{
+	float: left;
+	margin-left:5%
+	display: block;
+	width: 1000px;
+	height: 150px;
+	margin-top: 20px;
+	border:1px solid darkgrey ;
+	position: relative;
+}
+.accounts .count input{
+	display: block;
+    float: left;
+    margin-top: 20px;
+    margin-left: 20px;
+}
+/**************商品图片********************/
+.accounts .count img{
+	float: left;
+	margin-left: 10px;
+    margin-top: 30px;
+	border: 1px solid darkcyan;
+}
+/*************商品名称********************/
+.accounts .count dl{
+	display: block;
+	float: left;
+	width: 250px;
+	height: 100px;
+	margin-top: 50px;
+	margin-left: 10px;
+	font-size: 12px;
+	
+	
+}
+/****************商品的价格******************/
+.accounts .count dt{
+	display: block;
+    position: absolute;
+    left:155px;
+    top:100px;
+    color:red;
+}
+/****************加加减减*******************/
+.accounts .count dd{
+	display: block;
+	float: left;
+	width: 100px;
+	height: 30px;
+	margin-top:56px;
+	margin-left: 60px;
+	border: 1px solid darkgray;
+}
+.accounts .count dd span{
+	display: inline-block;
+	float: left;
+	width:25px;
+	height: 29px;
+	text-align: center;
+	line-height: 30px;
+	background: lavender;
+	
+}
+.accounts .count dd span:nth-child(2){
+	width: 48px;
+	background: white;
+	border-left: 1px solid darkgray;
+	border-right: 1px solid darkgray;
+}
+/***************删除按钮******************/
+.accounts .count  button{
+	background: white;
+	display: block;
+	width: 60px;
+	height:30px;
+	position: absolute;
+	top: 60px;
+	left: 800px;
+}
+/****************结算区域********************/
+.accounts .jie{
+	float: left;
+	margin-left:5%
+	display: block;
+	width: 1000px;
+	height: 60px;
+	margin-top: 20px;
+	position: relative;
+	background: rgb(245,245,245);
+	
+}
+.accounts .jie input{
+	display: block;
+    float: left;
+    margin-top: 24px;
+    margin-left: 20px;
+}
+.accounts .jie dl{
+	display: block;
+	float: left;
+	margin-top: 18px;
+	margin-left: 5px;
+}
+.accounts .jie dt{
+	display: block;
+	float: left;
+	margin-top: 18px;
+	margin-left: 25px;
+}
+.accounts .jie dd{
+	display: block;
+	float: left;
+	margin-top: 18px;
+	margin-left: 225px; 
+}
+.accounts .jie span{
+	display: block;
+	float: left;
+	margin-top: 18px;
+	margin-left: 15px;
+	color:red;
+}
+.accounts .jie button{
+	display: block;
+	float: left;
+	margin-left: 255px;
+	width: 220px;
+	height: 60px;
+	text-align: center;
+	line-height:60px;
+	font-size: 20px;
+	font-weight: 700;
+	letter-spacing: 5px;
+	color:white;
+	background: darkgreen;
+	border: none;
+	
+	border-radius:5px ;
+}

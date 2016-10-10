@@ -1,0 +1,145 @@
+/**************头部样式*******************/
+.top{
+	width:1200px;
+	height: 130px;
+	margin: 0 auto;
+	border-bottom:1px solid lightgray ;
+}
+.top img{
+	margin-top:30px;
+	margin-left:50px;
+	float: left;
+}
+.top .span1{
+	display: inline;
+	float: left;
+	font-size: 18px;
+	width: 100px;
+	height: 22px;
+	margin-top: 50px;
+	margin-left: 50px;
+}
+.top .span2{
+	display: inline;
+	float:right;
+	font-size: 14px;
+	width: 130px;
+	height: 22px;
+	margin-top: 50px;
+	margin-right:40px;
+}
+.top .span2 a{
+	display: inline;
+	width:40px;
+	text-decoration: none;
+	font-size: 18px;
+	color: deepskyblue;
+}
+/*****************表单样式******************/
+form{
+	width: 1200px;
+	height: 550px;
+	margin: 0 auto;
+	margin-top: 50px;
+	position: relative;
+	margin-bottom: 15px;
+	border-bottom:1px solid lightgray ;
+}
+/************表单基本样式***************/
+form input{
+	width:416px;
+	height:54px;
+	font-size: 18px;
+	text-indent:18px;
+	border: 1px solid lightgray;
+	margin-bottom: 15px;
+	border-radius:5px ;
+}
+/***********密码框************/
+form label{ 
+	display: inline-block; 
+	width: 90px;
+	margin-left: 200px;
+	text-align: right;
+}
+/***********密码确认框*************/
+form #_check{
+	width:18px;
+	height:18px; 
+	margin-left: 300px;
+	margin-top: 0px;
+	float: left;
+}
+/***********同意按钮****************/
+form .aggre{
+	width:150px; 
+	height: 18px;
+	margin-top: 15px; 
+}
+form .aggre a{
+	text-decoration:none;
+	color: darkcyan;
+}
+/***************注册按钮*************/
+form .btn{
+   position: absolute;
+   left: 295px;
+   top: 470px;
+   color: white;
+   font-size: 24px;
+}
+form ul{
+	position: absolute;
+	width:200px;
+	left:60%;
+	top: 0px;
+}
+form ul li{
+	width:198px;
+	height:54px;
+	margin-bottom: 15px;
+	border:1px solid darksalmon;
+	border-radius:5px ;
+	background: darksalmon;
+	text-align: center;
+	line-height: 54px;
+	display: none;
+}
+form #y-code{
+	width: 300px; 
+}
+form #noye{
+	width: 300px; 
+}
+/***********验证码框************/
+form .yzm{
+	width: 100px;
+	height: 54px;
+	position: absolute;
+	background: deepskyblue;
+	color: white;
+	letter-spacing: 5px;
+	text-align: center;
+	line-height: 54px;
+	border-radius:5px ;
+	left: 50%;
+	top: 13%;
+}
+/***********短信密码框***************/
+form .dx{
+	width: 100px;
+	height: 54px;
+	position: absolute;
+	background:darkseagreen;
+	color: white;
+	letter-spacing: 5px;
+	text-align: center;
+	line-height: 54px;
+	border-radius:5px ;
+	left: 50%;
+	top: 26%;
+}
+/*********错误边框**************/
+.error{
+	border: 1px solid red;
+}
