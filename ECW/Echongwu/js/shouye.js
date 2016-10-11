@@ -70,10 +70,14 @@ $(function(){
 				$(".start-jingpin div .jingpin-picture").eq(idx).append($("<img />").attr("src",jingpin.imgurl));
 				$(".start-jingpin div dl").eq(idx).text(jingpin.title);
 				$(".start-jingpin div dt").eq(idx).text(jingpin.reason); 
-				$(".start-jingpin div dd").eq(idx).text(jingpin.price);  
+				$(".start-jingpin div dd").eq(idx).text(jingpin.price); 
+				$(".start-jingpin div").eq(0).on("click",function(){ 
+		open("http://localhost:3000/Echongwu/html/goods.html");
+	})
 			});
 		} 
 	});
+	
 	//狗狗主粮
 	
 	$.ajax({
@@ -91,7 +95,7 @@ $(function(){
 				$(".dog-food div span dt").eq(idx).text(food.name);
 				$(".dog-food div span dd").eq(idx).text(food.price);
 			});
-		}
+		} 
 	});
 	
 		

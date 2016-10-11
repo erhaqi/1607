@@ -299,7 +299,18 @@
 .daohang .daohang-drop-down ol li {
 	height: 40px;
 	line-height:40px;
+	
 }
+.daohang .daohang-drop-down ol li:hover{
+	padding-left: 20px;
+}
+.daohang .daohang-drop-down ol li:nth-child(8){
+	padding-left: 0px;
+}
+.daohang .daohang-drop-down ol li:hover  .dao tr:nth-child(1) td{
+	border-right: none;
+}
+
 .daohang .daohang-drop-down ol li:nth-child(8) {
 	height: 50px;
 	line-height:50px;
@@ -334,6 +345,7 @@
 }
 .daohang .daohang-drop-down ol li a:hover{
 	color: darkturquoise;
+
 }
 
 
@@ -382,29 +394,31 @@
 .daohang-drop-down .dao{
 	position: absolute;
 	width: 400px;
-	height: 500px;
+	height: 483px;
 	top: 0px;
-	left: 65%;
+	left: 66%;
 	z-index:2;
 	background: white;
 	border: 1px solid green;
 	display: none;
+	border-left: none;
 }
-
-	
 
 .daohang-drop-down .dao table tr{
 	display: inline-block;
-	height: 40px;
+	height: 39px;
 	width: 400px; 
 	border-bottom: 1px dotted darkgray;
+}
+.daohang-drop-down .dao table tr:last-child{
+	border-bottom: none;
 }
 .daohang-drop-down .dao table tr td{
 	display: inline-block;
 	margin-top: 5px;
-	height:30px;
+	height:39px;
 	line-height: 30px;
-	
+
 }
 .daohang-drop-down .dao table tr td{
 	width: 150px;

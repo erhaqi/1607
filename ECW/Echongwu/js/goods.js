@@ -1,7 +1,9 @@
 $(function(){ 
 	//加载头部  
 	$(".top-shop").load("../html/top.html",function(){
-        $(".top-shop .search span").eq(3).find("b").text(getCookie("num"));
+		if(getCookie("num")){
+        $(".top-shop .search span").eq(3).find("b").text(getCookie("num")); 
+       }
         if(getCookie("username")){ 
 	        $(" .deng").text("欢迎您"); 
 		    $(" .zhu").text(getCookie("username"));
@@ -14,7 +16,7 @@ $(function(){
 		type:"get",
 		url:"/data/magnifyin_pictureg.json",
 		async:true,
-		success:function(res){
+		success:function(res){ 
 			
 			$.each(res, function(idx,pic) {
 				$(".xiao").eq(idx).append($("<img/>").attr("src",pic.xiao));
@@ -57,7 +59,7 @@ $(function(){
 	 	  if(number>99){
 	 	  	number=99;
 	 	  }
-	 	  $(".datalist li").eq(8).find(".num").text(number);
+	 	  $(".datalist li").eq(8).find(".num").text(number); 
 	 });
 	  $(".datalist li").eq(8).find(".jian").on("click",function(){
 	 	  number--;
@@ -67,10 +69,13 @@ $(function(){
 	 	    $(".datalist li").eq(8).find(".num").text(number);
 	 });
 	 //加入购物车
-	 var num_shops=0;//购物车里商品的数量
+	 var num_shops=0;//购物车里商品的数量 
 	 $(".datalist li").eq(10).on("click",function(){
-	 	num_shops++;
-	 
+	 	if(parseInt($(".datalist li").eq(8).find(".num").text())==1){
+	 	num_shops++; 
+	  }else{
+	  	num_shops+=parseInt($(".datalist li").eq(8).find(".num").text());
+	  }
 	 	var $oDiv=$("<div class='copy'></div>"); 
 	 	$oDiv.css({
 	 		left:$(".zhong").offset().left,
@@ -87,19 +92,21 @@ $(function(){
 	 	
 	 	//cookice
 	 	var d=new Date();
-	 	d.setDate(d.getDate() + 10); 
-	 	//保存商品数值
+	 	d.setDate(d.getDate() + 30);
+	 	//保存商品id
+	 	setCookie("id","商品1",d,"/Echongwu");
+	 	//保存商品数值 
 	 	setCookie("num",num_shops,d,"/Echongwu");
 	 	//保存商品名称
 	 	setCookie("name",$(".wenzi .datalist li").eq(0).text(),d,"/Echongwu");
 	 	//保存商品图片
 	 	setCookie("prc",$('.details div img').eq(1).attr("src"),d,"/Echongwu");
-//	 	"../img/jpg/xiao1.png"
-	 	//保存商品价格
+	 	//保存商品价格  
 	 	setCookie("cost",$(".wenzi .datalist li").eq(3).find("span").text(),d,"/Echongwu");
-	 	$("body").remove($oDiv);
-	 	});
+	 	$oDiv.remove();   
+ 	 	});
 	 });
+	
 	
 	 	
 	 

@@ -39,6 +39,7 @@
 	float: left;
 	margin-left:5%; 
 	background: white;
+	position: relative;
 }
 .shop .details .picture .zhong{
 	float: left;

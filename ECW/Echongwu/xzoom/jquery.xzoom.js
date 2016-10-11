@@ -2,8 +2,8 @@
 	$.fn.xzoom = function(options){
 		// 插件默认参数
 		var defaults = { 
-			width:300,
-			height:300,
+			width:460,
+			height:460,
 			gap:30,
 			position:'right'
 		};
@@ -22,10 +22,10 @@
 				ratio;//大图与小图的比例
 
 			var $smallImg = $('img',$self);
-             var bigUrl=$smallImg.attr('aa'); 
-			// 如果没有data-big属性，则直接使用小图的src属性
+            var bigUrl=$smallImg.attr('aa'); 
+			
 			setInterval(function(){
-				 bigUrl =$smallImg.attr('aa');
+			 bigUrl =$smallImg.attr('aa');
 			},10);
 			
 
@@ -78,8 +78,8 @@
 				// 移动大图
 				// console.log($bigImg,ratio)
 				$bigImg.css({
-					top:-top*ratio,
-					left:-left*ratio
+					top:-top*(ratio),
+					left:-left*(ratio)
 				})
 			})
 
@@ -101,8 +101,8 @@
 
 				// 把大图默认显示在右边
 				var pos = {
-						left:$smallImg.offset().left + $smallImg.outerWidth() + opt.gap+100,
-						top:$smallImg.offset().top+200
+						left:$smallImg.offset().left + $smallImg.outerWidth() + opt.gap+60,
+						top:292
 					}
 				if(opt.position == 'bottom'){
 					pos.left = $smallImg.offset().left;
@@ -110,7 +110,7 @@
 				}else if(opt.position == 'left'){
 					pos.left = $smallImg.offset().left - $big.outerWidth() - opt.gap;
 				} 
-				$big.css(pos);
+				$big.css(pos); 
 
 				// 创建放大镜
 				$min = $('<span/>').addClass('xzoom-min');
