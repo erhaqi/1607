@@ -464,7 +464,6 @@
 
 
 /************bar下的基本样式******************/
-
 .bar span {
 	display: inline-block;
 	width: 30px;
@@ -512,4 +511,8 @@
 
 .bar span:nth-child(9) {
 	background: url(../img/top/bar.png) no-repeat 0px -454px;
+}
+.bar span:nth-child(10) {
+	background: url(../img/top/bar.png) no-repeat 0px -526px;
+	
 }

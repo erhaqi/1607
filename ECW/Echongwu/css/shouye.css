@@ -32,29 +32,11 @@
 }
 
 
-/**********轮播图下一张按钮***************/
-
-.lunbo .next {
-	width: 60px;
-	height: 60px;
-	position: absolute;
-	background: url(../img/gif/btn.gif) no-repeat 0px -60px;
-	top: 150px;
-	right: 0px;
-	opacity: 0.8;
-}
 
 
-/**********轮播图上一张**************/
 
-.lunbo .prev {
-	width: 60px;
-	height: 60px;
-	position: absolute;
-	background: url(../img/gif/btn.gif) 0px 0px;
-	top: 150px;
-	opacity: 0.8;
-}
+
+
 
 
 
@@ -157,7 +139,7 @@
 	float: left;
 	width: 970px;
 	height: 200px;
-	background: lavender;
+	/*background: lavender;*/
 }
 
 .lunbo-bottom .lunbo-bottom-right div {
@@ -283,26 +265,27 @@
 	color: red;
 }
 /***************狗狗食物*****************/
-.dog-food {
+.dog-food,.dog-lingshi,.dog-baojian,.dog-richang {
 	float: left;
 	width: 100%;
 	background: rgb(245, 245, 245);
 	
 }
-.dog-food ul{
+.dog-food ul,.dog-lingshi ul,.dog-baojian ul,.dog-richang ul{
 	width:1200px;
 	height: 50px;
 	float: left;
 	margin-left: 5%;
 	background:white;
 }
-.dog-food ul img{
+.dog-food ul img,.dog-lingshi ul img,.dog-baojian ul img,.dog-richang ul img{
 	float: left;
 }
-.dog-food ul li{
+.dog-food ul li,.dog-lingshi ul li,.dog-baojian ul li,.dog-richang ul li{
+	float: left;
 	
 }
-.dog-food ul li a{
+.dog-food ul li a,.dog-lingshi ul li a,.dog-baojian ul li a,.dog-richang ul li a{
 	margin-top: 5px;
 	display: inline-block;
 	float: left;
@@ -314,10 +297,10 @@
 	color: dimgray;
 	border-right: 1px dotted lavender;
 }
-.dog-food ul li a:hover{
+.dog-food ul li a:hover,.dog-lingshi ul li a:hover,.dog-baojian ul li a:hover,.dog-richang ul li a:hover{
 	color: dodgerblue;
 }
-.dog-food ul li:nth-child(1) a{
+.dog-food ul li:nth-child(1) a,.dog-lingshi ul li:nth-child(1) a,.dog-baojian ul li:nth-child(1) a,.dog-richang ul li:nth-child(1) a{
 	width: 590px;
 	text-align: left;
 	text-indent:20px;
@@ -325,21 +308,21 @@
 	color: green;
 	border: none;
 }
-.dog-food ul li:last-child a{
+.dog-food ul li:last-child a,.dog-lingshi ul li:last-child a,.dog-baojian ul li:last-child a,.dog-richang ul li:last-child a{
 	border: none;
 } 
-.dog-food  div{
+.dog-food  div,.dog-lingshi div,.dog-baojian div,.dog-richang div{
 	float: left;
 	width: 1200px;
 	height: 480px;
 	margin-left:5%;
-   background: white;
+   background:white;
    margin-bottom: 30px;
    }
-.dog-food div img{
-	float: left;
+.dog-food div img,.dog-lingshi div img,.dog-baojian div img,.dog-richang div img{
+	float: left; 
 }
-.dog-food div span{
+.dog-food div span,.dog-lingshi div span,.dog-baojian div span,.dog-richang div span{
 	
 	display: inline-block;
 	float: left;
@@ -347,22 +330,23 @@
 	width: 200px;
 	height:240px;
 	
+	
 }
-.dog-food div span dl{
-	margin-left: 25px;
+.dog-food div span dl,.dog-lingshi div span dl,.dog-baojian div span dl,.dog-richang div span dl{
 	display: block;
+	margin-left: 25px;
 	width: 150px;
-	height: 150px;
+	height: 150px; 
 }
-.dog-food div span dt{
+.dog-food div span dt,.dog-lingshi div span dt,.dog-baojian div span dt,.dog-richang div span dt{
 	font-size: 12px;
 	color: darkslategray;
 	text-align: center;
 }
-.dog-food div span dd{
+.dog-food div span dd,.dog-lingshi div span dd,.dog-baojian div span dd,.dog-richang div span dd{
 	display: block;
 	font-size: 16px;
-	color: red;
+	color:red;
 	text-align: center; 
 	margin-top:20px;
-}
+} 

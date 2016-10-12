@@ -1,0 +1,43 @@
+[
+  { 
+     "imgurl":"img/jpg/lingshi1.jpg",
+     "name":"百利品牌钜惠-买粮赠罐头"  ,
+     "price":"￥22.00"
+  },
+   {
+     "imgurl":"img/jpg/lingshi2.jpg",
+      "name":"“巅峰”盛宴，限量回馈"  ,
+      "price":"￥34.00"
+  },
+   {
+     "imgurl":"img/jpg/lingshi3.jpg",
+      "name":"奥运宝大促:满100元送148元零食"  ,
+      "price":"￥56.00"
+  },
+   {
+     "imgurl":"img/jpg/lingshi4.jpg",
+      "name":"进口大牌尝鲜体验" , 
+      "price":"￥87.00"
+  },
+  {
+     "imgurl":"img/jpg/lingshi5.jpg",
+      "name":"安娜玛特大牌精选"  ,
+      "price":"￥55.00"
+  },
+   {
+     "imgurl":"img/jpg/lingshi6.jpg",
+      "name":"比瑞吉满400最高送100"  ,
+      "price":"66.00"
+  },
+   {
+     "imgurl":"img/jpg/lingshi7.jpg",
+      "name":"冠军犬的御用粮-佰芙"  ,
+      "price":"￥12.00"
+  },
+   {
+     "imgurl":"img/jpg/lingshi8.jpg",
+      "name":"超值折扣4折起"  ,
+      "price":"￥23.00"
+  }
+
+]

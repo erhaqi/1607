@@ -5,29 +5,33 @@ $(function(){
 	$(".list-foot").load("../html/footer.html");
 	//加载图片列表
 	var i=0;
+	var arr=["/data/list2.json","/data/list.json","/data/list3.json"];
 	$.ajaxSetup({ 
 //		type:"get",
-		url:"/data/list.json",
+		url:arr[0],
 //		async:true,
 		success:function(res){
 			i++;
 			$.each(res, function(idx,pic){
-				$(".lazy").append($("<img/>").attr("src",pic.imgurl))
+				$(".lazy").append($("<img/>").attr("src",pic.imgurl));
 			});
 		} 
 	});
-	$.ajax(); 
+	$.ajax();
+	
 	//滑动加载 
 	$(window).on('scroll',function(){
 				// 获取滚动条滚动过的距离
 				var scrollTop = $(window).scrollTop();
                  
 				// 当差不多滚动到底部是加载更多内容
-				if(scrollTop >= $(document).height() - $(window).height() - 500 && i<5){
-					
-					$.ajax();
+				if(scrollTop >= $(document).height() - $(window).height() - 600 && i<3){
+		            console.log(i);
+					$.ajax({
+						url:arr[i]
+					});
 				}
-				console.log(i);
+				
 				
 			})
 

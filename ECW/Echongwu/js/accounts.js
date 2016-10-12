@@ -2,17 +2,25 @@ $(function(){
 	//加载头部 
 	$(".accounts-top").load("top.html",function(){
 		$(".daohang").remove();
-		if(getCookie("num")){
-        $(".accounts-top .search span").eq(3).find("b").text(getCookie("num"));
-      
-       }
-		
+        $(".accounts-top .search span").eq(3).remove();
+        $(".accounts-top .search span").eq(2).remove();
+        
 		 if(getCookie("username")){ 
 	        $(" .deng").text("欢迎您"); 
 		    $(" .zhu").text(getCookie("username"));
 		 }
-		
-		if(getCookie("id")=="商品1"){ 
+	//加载底部
+	$(".accounts-foot").load("footer.html");
+	//添加到购物车
+	   if(getCookie("shuxing")){
+		var arr=[];
+		var shuxing=getCookie("shuxing");
+		var goods= JSON.parse(getCookie("shuxing"));
+		$.each(goods, function(idx,ele){
+			arr.push(ele);
+		});
+		console.log(arr[0].id);
+		if( arr[0].id=="1"){ 
 			//隐藏空商品的框架
 			$(".kong").hide();
 			//加入有商品的框架
@@ -32,15 +40,15 @@ $(function(){
 	            }
 		    })
 		    //加入选中的图片
-		    $("<img />").attr("src",getCookie("prc")).appendTo($sp);
+		    $("<img />").attr("src",arr[0].prc).appendTo($sp);
 		    //加入商品名字
-		    $("<dl/>").text(getCookie("name")).appendTo($sp);
+		    $("<dl/>").text(arr[0].name).appendTo($sp);
 		    //加入商品价格
-		    $("<dt/>").text(getCookie("cost")).appendTo($sp);
+		    $("<dt/>").text(arr[0].cost).appendTo($sp);
 		    //加入加加剪剪
 		    var $jia_jian=$("<dd/>");
 		    $("<span/>").text("-").appendTo($jia_jian);
-		    $("<span/>").text(getCookie("num")).appendTo($jia_jian);
+		    $("<span/>").text(arr[0].num).appendTo($jia_jian);
 		    $("<span/>").text("+").appendTo($jia_jian);
 		    $sp.append($jia_jian);
 		    //加加事件
@@ -49,7 +57,7 @@ $(function(){
 		     if( parseInt($jia_jian.find("span").eq(1).text())>99){
 		     	  $jia_jian.find("span").eq(1).text(99);
 		     } 
-		     $div.find("span").text("￥"+getCookie("cost")*parseInt($("dd span").eq(1).text()));
+		     $div.find("span").text("￥"+arr[0].cost*parseInt($("dd span").eq(1).text()));
 		    });
 		     //减减事件
 		    $jia_jian.find("span").eq(0).on("click",function(){
@@ -57,10 +65,12 @@ $(function(){
 		     if( parseInt($jia_jian.find("span").eq(1).text())<0){
 		     	  $jia_jian.find("span").eq(1).text(0);
 		     }
-		      $div.find("span").text("￥"+getCookie("cost")*parseInt($("dd span").eq(1).text()));
+		      $div.find("span").text("￥"+arr[0].cost*parseInt($("dd span").eq(1).text()));
 		    });
 		    //加入删除按钮
 		    $("<button class='clear'/>").text("删除").appendTo($sp);
+		    //加入收藏按钮
+		    $("<button class='collect-gather'/>").text("收集").appendTo($sp);
 		    //加入结算区域
 		     var $div=$("<div class='jie'/>").appendTo($(".accounts"));
 		     //加入全选按钮
@@ -72,10 +82,12 @@ $(function(){
 		     $("<dl/>").text("全选").appendTo($div);
 		     //加入选中商品
 		      $("<dt/>").text("[删除选中商品]").appendTo($div);
+		      //加入收藏选中商品
+		      $("<dt/>").text("[收藏选中商品]").appendTo($div);
 		      //加入总价文字
-		        $("<dd/>").text("总价").appendTo($div);
+		        $("<dd/>").text("总价(不含运费)").appendTo($div);
 		      //加入总价
-		        $("<span>").text("￥"+parseFloat(getCookie("cost"))*parseInt($("dd span").eq(1).text())).appendTo($div);
+		        $("<span>").text("￥"+parseFloat(arr[0].cost)*parseInt($("dd span").eq(1).text())).appendTo($div);
 		       
 		      //加入结算按钮
 		      $("<button></button>").text("去结算").appendTo($div);
@@ -83,13 +95,15 @@ $(function(){
 		    $(".clear").on("click",function(){
 		    	$sp.remove();
 		    	$div.remove();
-		    	$(".kong").show(); 
-		    })
+		    	$(".kong").show();
+		    	removeCookie("shuxing");
+		    
+		    });
 		}
+	
+	}
+	
 	});
-	
-	
-	
 	
 	 
 })

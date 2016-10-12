@@ -85,7 +85,7 @@
 						showPic();
 					});
 				}
-
+                          
 				// 设置样式
 				$self.addClass('xcarousel').css({
 					height:opt.height,
@@ -103,8 +103,8 @@
 
 				// 左右按钮
 				if(opt.buttons){
-					$('<div/>').html('&gt;').addClass('next').appendTo($self);
-					$('<div/>').html('&lt;').addClass('previous').appendTo($self);
+					$('<div/>').addClass('next').appendTo($self);
+					$('<div/>').addClass('previous').appendTo($self);
 					$self.on('click','.next',function(){
 						index++;
 						showPic();

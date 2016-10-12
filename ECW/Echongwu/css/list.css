@@ -3,8 +3,11 @@
 	float: left;
 }
 .lazy img{
-	margin-left: 2%;
+	margin-left:2%;
 }
 .lazy img:hover{
-	border: 1px ridge darkcyan;
+	
 }
+
+
+

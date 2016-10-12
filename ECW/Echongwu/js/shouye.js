@@ -7,6 +7,7 @@ $(function(){
 		    $(".shouye-top .zhu").text(getCookie("username"));
 		 }
 		//修改头部的图片的默认路径
+		
 		$(".shouye-top .top-next-img img").attr("src","img/top/df7d7f9a4d2af1d833c304b92ab49069.jpg");
 		$(".shouye-top .search img").attr('src','img/gif/epet-logo.png');
 		$(".shouye-top .daohang img ").attr("src","img/gif/phoneApp.gif");
@@ -27,9 +28,22 @@ $(function(){
 	$(".daohang-drop-down li").on("mouseenter",function(){
 		$(".dao").show();
 	}).on("mouseleave",function(){
-		$(".dao").hide();
-	})
+		$(" .dao").hide();
 	});
+	//回到顶部事件
+	    $(".bar span").eq(9).hide();
+        $(window).on("scroll",function(){
+        	var scroll=$(document).scrollTop();
+           if(scroll>500){
+        	$(".bar span").eq(9).show();
+          }else{
+          	$(".bar span").eq(9).hide();
+          }
+     });
+     $(".bar span").eq(9).on("click",function(){
+     	 $('body').animate({"scrollTop":0}); 
+     })
+});
 	
 	
 	//加载底部3 
@@ -97,8 +111,60 @@ $(function(){
 			});
 		} 
 	});
-	
-		
-
+	//狗狗零食
+	$.ajax({
+		type:"get",
+		url:"/data/dog_lingshi.json",
+		async:true,
+		success:function(res){
+			
+			$.each(res, function(idx,food) { 
+				$(".dog-lingshi div").append($("<span/>"));
+				$(".dog-lingshi div span").eq(idx).append($("<dl/>"));
+				$(".dog-lingshi div span").eq(idx).append($("<dt/>")); 
+				$(".dog-lingshi div span").eq(idx).append($("<dd/>")); 
+				$(".dog-lingshi div span dl").eq(idx).append($("<img/>").attr("src",food.imgurl));
+				$(".dog-lingshi div span dt").eq(idx).text(food.name);
+				$(".dog-lingshi div span dd").eq(idx).text(food.price);
+			});
+		} 
+	});
+         
+         //狗狗保健
+	$.ajax({
+		type:"get",
+		url:"/data/dog_baojian.json",
+		async:true,
+		success:function(res){
+			
+			$.each(res, function(idx,food) { 
+				$(".dog-baojian div").append($("<span/>"));
+				$(".dog-baojian div span").eq(idx).append($("<dl/>"));
+				$(".dog-baojian div span").eq(idx).append($("<dt/>")); 
+				$(".dog-baojian div span").eq(idx).append($("<dd/>")); 
+				$(".dog-baojian div span dl").eq(idx).append($("<img/>").attr("src",food.imgurl));
+				$(".dog-baojian div span dt").eq(idx).text(food.name);
+				$(".dog-baojian div span dd").eq(idx).text(food.price);
+			});
+		} 
+	});
+	      //狗狗日常用品
+	$.ajax({
+		type:"get",
+		url:"/data/dog_baojian.json",
+		async:true,
+		success:function(res){
+			
+			$.each(res, function(idx,food) { 
+				$(".dog-richang div").append($("<span/>"));
+				$(".dog-richang div span").eq(idx).append($("<dl/>"));
+				$(".dog-richang div span").eq(idx).append($("<dt/>")); 
+				$(".dog-richang div span").eq(idx).append($("<dd/>")); 
+				$(".dog-richang div span dl").eq(idx).append($("<img/>").attr("src",food.imgurl));
+				$(".dog-richang div span dt").eq(idx).text(food.name);
+				$(".dog-richang div span dd").eq(idx).text(food.price);
+			});
+		} 
+	});
 
 }) 

@@ -1,28 +1,18 @@
 [
-  {
-    "imgurl":"../img/jpg/list1.jpg"
+  { 
+     "imgurl":"../img/jpg/list1.jpg"
+     
   },
-    {
-    "imgurl":"../img/jpg/list2.jpg"
+   {
+     "imgurl":"../img/jpg/list2.jpg"
+      
   },
-    {
-    "imgurl":"../img/jpg/list3.jpg"
+   {
+     "imgurl":"../img/jpg/list3.jpg"
   },
-    {
-    "imgurl":"../img/jpg/list4.jpg"
-  },
-  {
-    "imgurl":"../img/jpg/list1.jpg"
-  },
-    {
-    "imgurl":"../img/jpg/list2.jpg"
-  },
-    {
-    "imgurl":"../img/jpg/list3.jpg"
-  },
-    {
-    "imgurl":"../img/jpg/list4.jpg"
+   {
+     "imgurl":"../img/jpg/list4.jpg"
+     
   }
-
-
+  
 ]

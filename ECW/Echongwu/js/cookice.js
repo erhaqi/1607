@@ -1,6 +1,3 @@
-//instanceof: 判断是否属于某个类型
-//name=value;[expires=date];[path=路径];[domain=域名];[secure]
-//设置cookie
 function setCookie(name,value,expires,path,domain,secure){
 	//name=value
 	var cookieText = encodeURIComponent(name) +"="+ encodeURIComponent(value);
@@ -53,4 +50,4 @@ function removeCookie(name){
 	document.cookie = encodeURIComponent(name) +"=;expires="+d;
 	return document.cookie;
 	
-} 
+}
