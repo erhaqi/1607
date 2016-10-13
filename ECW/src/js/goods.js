@@ -91,17 +91,17 @@ $(function(){
 	 	//cookice
         var d=new Date();
 	 	d.setDate(d.getDate() +30);  
-	 	var jso=[
+	 	var jso=JSON.stringify([
 	 	    {
 	 	    	"id":"1",//保存商品id
-	 	    	"num":4,//保存商品数值 
+	 	    	"num":4,//保存商品数值  
 	 	    	"name":$(".wenzi .datalist li").eq(0).text(),//保存商品名称
 	 	    	"prc":$('.details div img').eq(1).attr("src"),//保存商品图片
 	 	    	"cost":$(".wenzi .datalist li").eq(3).find("span").text()//保存商品价格  
-	 	    }];
+	 	    }]);
 	    
 	 	
-	    setCookie("shuxing",JSON.stringify(Jso),d,"/Echongwu/html");
+	    setCookie("shuxing",jso,d,"/src/html");
 	 
 	 	$oDiv.remove();
 	 	

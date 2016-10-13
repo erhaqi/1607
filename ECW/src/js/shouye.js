@@ -88,7 +88,7 @@ $(function(){
 				$(".start-jingpin div dt").eq(idx).text(jingpin.reason); 
 				$(".start-jingpin div dd").eq(idx).text(jingpin.price); 
 				$(".start-jingpin div").eq(0).on("click",function(){ 
-		open("http://localhost:3000/Echongwu/html/goods.html");
+		open("http://localhost:3000/src/html/goods.html");
 	})
 			});
 		} 

@@ -104,9 +104,9 @@ $(function(){
      		alert("提交成功");
      		var d = new Date;
  			d.setDate(d.getDate() + 10);
-     		var username = setCookie("username",username,d,"/Echongwu");
+     		var username = setCookie("username",username,d,"/src");
  			var psd = setCookie("psd",pwd,d);
- 			open("http://localhost:3000/Echongwu/html/logon.html");
+ 			open("http://localhost:3000/src/html/logon.html");
      	}else{
      		alert("请核查");
      	}

@@ -202,7 +202,7 @@
 	margin-top: 15px;
 	
 }
-.search .goods a{
+.search .goods a{ 
 	text-decoration: none;
 }
 .search .goods b{
@@ -211,7 +211,7 @@
 /**********搜索菜单下面的列表热度******************/
 .search ul{
 	width:450px;
-	margin-left: 240px;
+	margin-left:120px;
 	float: left;
 }
 

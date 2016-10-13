@@ -29,7 +29,7 @@ $(function(){
 	$(".logon-btn").on("click",function(){ 
 		if($(".username").val()==getCookie("username") && $(".psw").val()==getCookie("psd")&&$(".psw").val()!=""&&$(".username").val()!=""){
 			alert("...正在登录");
-			open("http://localhost:3000/Echongwu/shou-ye.html");
+			open("http://localhost:3000/src/shou-ye.html");
 		}else{   
 			alert("登录失败，请重试");   
 				
