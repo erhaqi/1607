@@ -7,7 +7,7 @@
 .shop .list{
 	float: left;
 	width: 1200px;
-	margin-left:5% ;
+	margin-left:5%;
 	margin-top: 10px;
 	margin-bottom: 10px;
 }
@@ -273,7 +273,11 @@
 }
 .goods-introduce .rigght_ ul li:nth-child(1) a{
 	margin-left: 0px;
+	height: 31px;
 	border-top: 2px solid darkgreen;
+	border-left: none;
+	background: white;
+	
 }
 .goods-introduce .rigght_ img{
 	float: left;

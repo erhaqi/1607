@@ -212,6 +212,7 @@
 .search ul{
 	width:450px;
 	margin-left: 240px;
+	float: left;
 }
 
 .search ul li{
@@ -236,10 +237,10 @@
 /**********导航栏**************/
  
 .daohang {
-	width: 1200px;
-	height: 40px;
+	width:1200px;
+	height:40px;
 	float: left;
-	margin-left: -178px;
+	/*margin-left: -178px;*/
 	position: relative;
 }
 
@@ -292,20 +293,35 @@
 }
 .daohang .daohang-drop-down ol{
 	list-style: none;
-	width: 200px;
-	height: 360px;
+	width: 240px;
+	height: 337px; 
 	background: white;
+	border:1px solid green;
+	top: 0px;
+	
+	position: absolute;
+	border-right:none ;
+	z-index:2;
+	
 }
 .daohang .daohang-drop-down ol li {
 	height: 40px;
 	line-height:40px;
+	border-bottom: 1px dashed lavender;
+	border-right:1px solid green ;
 	
 }
+
 .daohang .daohang-drop-down ol li:hover{
 	padding-left: 20px;
+	border-bottom: 1px solid   green;
+	border-top: 1px solid green;
+	border-right:none ;
+	
 }
 .daohang .daohang-drop-down ol li:nth-child(8){
 	padding-left: 0px;
+	border-bottom:none;
 }
 .daohang .daohang-drop-down ol li:hover  .dao tr:nth-child(1) td{
 	border-right: none;
@@ -396,39 +412,38 @@
 	width: 400px;
 	height: 483px;
 	top: 0px;
-	left: 66%;
-	z-index:2;
+	left: 80%;
+	z-index:1;
 	background: white;
-	border: 1px solid green;
-	display: none;
-	border-left: none;
+   	border: 1px solid green;
+   	display:none;
+}
+.dao tr{
+	float: left;
+	margin-left: 10%;
+}
+.dao tr td dl{
+	float: left;
+	margin-left: 10%;
+	width: 220px;
+	height: 35px;
+	background: url(../img/gif/dao1.gif);
+}
+.dao tr td dt{
+	float: left;
+	margin-left: 10%;
+	width: 220px;
+	height: 35px;
+	background: url(../img/gif/dao2.gif);
+}
+.dao tr td li{
+	list-style: none;
+	float: left;
+	width: 100px;
+	height: 30px;
+	text-align: center;
 }
 
-.daohang-drop-down .dao table tr{
-	display: inline-block;
-	height: 39px;
-	width: 400px; 
-	border-bottom: 1px dotted darkgray;
-}
-.daohang-drop-down .dao table tr:last-child{
-	border-bottom: none;
-}
-.daohang-drop-down .dao table tr td{
-	display: inline-block;
-	margin-top: 5px;
-	height:39px;
-	line-height: 30px;
-
-}
-.daohang-drop-down .dao table tr td{
-	width: 150px;
-	font-size: 18px;
-	text-indent: 54px;
-}
-.daohang-drop-down .dao table tr td:nth-child(2){
-	background: url(../img/gif/dao1.gif) no-repeat;
-	width: 200px;
-}
 /************狗狗导航对应的下拉框*****************/
 .daohang .daohang-drop-down2{
 	width: 300px; 

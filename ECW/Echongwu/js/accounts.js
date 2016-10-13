@@ -8,19 +8,21 @@ $(function(){
 		 if(getCookie("username")){ 
 	        $(" .deng").text("欢迎您"); 
 		    $(" .zhu").text(getCookie("username"));
-		 }
+		 } 
 	//加载底部
 	$(".accounts-foot").load("footer.html");
 	//添加到购物车
-	   if(getCookie("shuxing")){
+	   if(getCookie("shuxing")){ 
 		var arr=[];
 		var shuxing=getCookie("shuxing");
 		var goods= JSON.parse(getCookie("shuxing"));
+		 
 		$.each(goods, function(idx,ele){
-			arr.push(ele);
+			arr.push(ele); 
 		});
-		console.log(arr[0].id);
-		if( arr[0].id=="1"){ 
+			//购物数量
+			$(".list1 li").eq(0).find("span").text(arr[0].num);
+			$(".list1 li").eq(3).find("span").text(1);
 			//隐藏空商品的框架
 			$(".kong").hide();
 			//加入有商品的框架
@@ -31,8 +33,8 @@ $(function(){
 		    //复选框单击事件 
 		    $sp.find("input").on("click",function(){
 		    	
-		    	if($(this).prop("checked")==false){
-		    	$div.find("span").hide();
+		    if($(this).prop("checked")==false){
+		    	
 	            $div.find("input").prop("checked",false);
 	           }
 	            else{
@@ -55,7 +57,7 @@ $(function(){
 		    $jia_jian.find("span").eq(2).on("click",function(){
 		     $jia_jian.find("span").eq(1).text(parseInt($jia_jian.find("span").eq(1).text())+1);
 		     if( parseInt($jia_jian.find("span").eq(1).text())>99){
-		     	  $jia_jian.find("span").eq(1).text(99);
+		     	  $jia_jian.find("span").eq(1).text(99); 
 		     } 
 		     $div.find("span").text("￥"+arr[0].cost*parseInt($("dd span").eq(1).text()));
 		    });
@@ -97,9 +99,9 @@ $(function(){
 		    	$div.remove();
 		    	$(".kong").show();
 		    	removeCookie("shuxing");
-		    
 		    });
-		}
+		 
+		
 	
 	}
 	

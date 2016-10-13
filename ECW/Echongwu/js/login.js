@@ -1,6 +1,7 @@
 $(function(){
 	//加载底部
 	$(".foot").load("logon_login_foot.html");
+		
 	var _tel_=false; //手机
 	var y_code=false;//验证码
 	var noye_=false;//短信

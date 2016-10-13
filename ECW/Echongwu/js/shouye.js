@@ -26,9 +26,11 @@ $(function(){
 	});
 	//三级菜单事件
 	$(".daohang-drop-down li").on("mouseenter",function(){
+		$(".daohang li").eq(1).css("background","green");
 		$(".dao").show();
 	}).on("mouseleave",function(){
 		$(" .dao").hide();
+		$(".daohang li").eq(1).css("background","white");
 	});
 	//回到顶部事件
 	    $(".bar span").eq(9).hide();
@@ -46,7 +48,7 @@ $(function(){
 });
 	
 	
-	//加载底部3 
+	//加载底部
 	$(".shouye-foot").load("html/footer.html",function(){
 		$(".shouye-foot .tab img").attr("src","img/footer/cat_phone.png");
 		$(".shouye-foot .safe img").eq(0).attr("src","img/footer/safe360.png");

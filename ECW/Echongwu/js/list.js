@@ -1,6 +1,12 @@
 $(function(){
 	//加载头部
-	$(".list-top").load("../html/top.html");
+	$(".list-top").load("../html/top.html",function(){
+		//修改头部客户的信息
+		 if(getCookie("username")){ 
+	        $(" .deng").text("欢迎您"); 
+		    $(" .zhu").text(getCookie("username"));
+		 }
+	});
 	//加载底部
 	$(".list-foot").load("../html/footer.html");
 	//加载图片列表
@@ -26,7 +32,7 @@ $(function(){
                  
 				// 当差不多滚动到底部是加载更多内容
 				if(scrollTop >= $(document).height() - $(window).height() - 600 && i<3){
-		            console.log(i);
+		           
 					$.ajax({
 						url:arr[i]
 					});

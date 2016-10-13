@@ -1,9 +1,7 @@
 $(function(){ 
+	
 	//加载头部  
 	$(".top-shop").load("../html/top.html",function(){
-//		if(){
-//      $(".top-shop .search span").eq(3).find("b").text();
-//     }
         if(getCookie("username")){ 
 	        $(" .deng").text("欢迎您"); 
 		    $(" .zhu").text(getCookie("username"));
@@ -43,10 +41,10 @@ $(function(){
 	 	url:"/data/left.json",
 	 	async:true,
 	 	success:function(res){
-	 		console.log("2");
+	 	
 	 		$.each(res, function(idx,ele){
-	 			console.log("1");
-	 			$("<li></li>").append($("<img />").attr("src",ele.imgurl)).append(ele.name).append(ele.price).appendTo($(".left_ ul"));
+	 			
+	 			$("<li></li>").append($("<img />").attr("src",ele.imgurl)).append(ele.name).appendTo($(".left_ ul"));
                
 	 		});
 	 	}
@@ -91,19 +89,22 @@ $(function(){
 	 	$(".top-shop .search span").eq(3).find("b").text(num_shops);
 	 	
 	 	//cookice
-        	var d=new Date();
-	 	d.setDate(d.getDate() + 30);
-	 	var jso=JSON.stringify([
+        var d=new Date();
+	 	d.setDate(d.getDate() +30);  
+	 	var jso=[
 	 	    {
 	 	    	"id":"1",//保存商品id
-	 	    	"num":num_shops,//保存商品数值 
+	 	    	"num":4,//保存商品数值 
 	 	    	"name":$(".wenzi .datalist li").eq(0).text(),//保存商品名称
 	 	    	"prc":$('.details div img').eq(1).attr("src"),//保存商品图片
 	 	    	"cost":$(".wenzi .datalist li").eq(3).find("span").text()//保存商品价格  
-	 	    }
-	    ]);
-	    var shuxing=setCookie("shuxing",jso,d,"/Echongwu/html"); 
+	 	    }];
+	    
+	 	
+	    setCookie("shuxing",JSON.stringify(Jso),d,"/Echongwu/html");
+	 
 	 	$oDiv.remove();
+	 	
  	 	});
 	 }); 
 	

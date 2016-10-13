@@ -1,32 +1,40 @@
 [
   {  
-     "imgurl":"../img/jpg/list10.jpg"
+     "imgurl":"../img/jpg/list10.jpg",
+      "jie":"大型犬牵引，安全出行，全家放心！"
  
   },
    {
-     "imgurl":"../img/jpg/list11.jpg"
-      
+     "imgurl":"../img/jpg/list11.jpg",
+        "jie":"小型犬吃喝拉撒睡，一次搞定！"
   },
    {
-     "imgurl":"../img/jpg/list12.jpg"
+     "imgurl":"../img/jpg/list12.jpg",
+     "jie":"孕期助力，好货福利顶瓜瓜"
   },
    {
-     "imgurl":"../img/jpg/list13.jpg"
+     "imgurl":"../img/jpg/list13.jpg",
+     "jie":"柯基私犬定制，小短腿的反击！"
   },
    {
-     "imgurl":"../img/jpg/list14.jpg"
+     "imgurl":"../img/jpg/list14.jpg",
+     "jie":"中大型犬训练礼包，乖汪7折养成"
   },
    {
-     "imgurl":"../img/jpg/list15.jpg"
+     "imgurl":"../img/jpg/list15.jpg",
+     "jie":"小型犬专用粮，精准营养，健康无忧！"
   },
   {
-     "imgurl":"../img/jpg/list16.jpg"
+     "imgurl":"../img/jpg/list16.jpg",
+     "jie":"幼犬到家准备礼包，做合格养宠人"
   },
    {
-     "imgurl":"../img/jpg/list17.jpg"
+     "imgurl":"../img/jpg/list17.jpg",
+     "jie":""
   },
    {
-     "imgurl":"../img/jpg/list18.jpg"
+     "imgurl":"../img/jpg/list18.jpg",
+     "jie":"金毛专属大礼包，实用更实惠"
   }
   
 ]
