@@ -11,6 +11,9 @@ ul li{
 }
 body{
 	font-family: "微软雅黑";
+	width:100%;
+	min-width:1100px ;
+	margin: 0 auto;
 }
  input{
 	border: none;

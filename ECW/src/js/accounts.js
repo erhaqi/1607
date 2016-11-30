@@ -12,10 +12,10 @@ $(function(){
 	//加载底部
 	$(".accounts-foot").load("footer.html");
 	//添加到购物车
-	   if(getCookie("shuxing")){ 
+	   if(getCookie("goods")){ 
 		var arr=[];
-		var shuxing=getCookie("shuxing");
-		var goods= JSON.parse(getCookie("shuxing"));
+		var shuxing=getCookie("goods");
+		var goods= JSON.parse(getCookie("goods"));
 		 
 		$.each(goods, function(idx,ele){
 			arr.push(ele); 
@@ -98,7 +98,7 @@ $(function(){
 		    	$sp.remove();
 		    	$div.remove();
 		    	$(".kong").show();
-		    	removeCookie("shuxing");
+		    	removeCookie("goods");
 		    });
 		 
 		

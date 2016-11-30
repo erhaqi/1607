@@ -2,8 +2,9 @@
 .top{
 	width:1200px;
 	height: 30px;
-	margin: 0 auto;
+
 	position: relative;
+	margin: 0 auto;
 }
 /*******头部左边导航***********/
 .top span{
@@ -240,23 +241,25 @@
 	width:1200px;
 	height:40px;
 	float: left;
+	margin: 0 auto;
 	/*margin-left: -178px;*/
 	position: relative;
+	
 }
 
-.daohang ul {
-	width: 1150px;
+.daohang #UL {
+	width: 1180px;
 	height: 40px;
-	float: left;
+	/*float: left;*/
 	position: relative;
-	margin-left: 10px;
+	margin: 0 auto;
 }
 
-.daohang ul li {
+.daohang #UL li {
 	float: left;
 }
 
-.daohang ul li:last-child {
+.daohang #UL li:last-child {
 	position: absolute;
 	right: 0px;
 }
@@ -289,6 +292,7 @@
 	top:40px;
 	left:10px;
 	display: none;
+	background: green;
 	
 }
 .daohang .daohang-drop-down ol{
@@ -298,7 +302,6 @@
 	background: white;
 	border:1px solid green;
 	top: 0px;
-	
 	position: absolute;
 	border-right:none ;
 	z-index:2;
@@ -475,6 +478,7 @@
 	right: 0px;
 	top: 30px;
 	border-radius: 40px 0 0 40px;
+	z-index: 100;
 }
 
 

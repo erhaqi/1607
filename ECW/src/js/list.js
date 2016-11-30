@@ -31,7 +31,7 @@ $(function(){
 				var scrollTop = $(window).scrollTop();
                  
 				// 当差不多滚动到底部是加载更多内容
-				if(scrollTop >= $(document).height() - $(window).height() - 600 && i<3){
+				if(scrollTop >= $(document).height() - $(window).height() - 900 && i<3){
 		           
 					$.ajax({
 						url:arr[i]
